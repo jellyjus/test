@@ -1,0 +1,29 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test:int": "./node_modules/mocha/bin/mocha",
+    "lint": "./node_modules/.bin/eslint ./",
+    "start": "node serverStarter.js",
+    "db:migrate": "node db/migrate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^6.5.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "pg": "^7.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "flow-remove-types": "^1.2.3",
+    "mocha": "^5.2.0",
+    "request": "^2.88.0",
+    "should": "^13.2.3"
+  }
+}
